@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/Navbar';
+import User from "./components/User";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navbar/>
+      <User name="Kemal Can" salary="4000 €" department="Software" />
+      <User name="Handan Kaan" salary="5000 €" department="Software " />
+      <style jsx>{`.b{color:blue ;background:#ffff56;font-size:20px;width:400px;text-align:center}.App{color:black ;background:#ffff56;font-size:30px;width:400px;text-align:center;`}</style>
     </div>
+    
   );
 }
 
