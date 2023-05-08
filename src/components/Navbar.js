@@ -1,10 +1,10 @@
 import React from 'react'
 
- function Navbar() {
+ function Navbar(props) {
   return (
     <div>
       <h2>
-        User App
+        {props.title}
       </h2>
     </div>
   )
